@@ -1,0 +1,63 @@
+{
+  "name": "palyrightparabankdemo",
+  "version": "1.0.0",
+  "description": "ParaBank automation using Playwright, TypeScript and Cucumber BDD",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:parallel": "cucumber-js --parallel 4",
+
+    "test:registration": "cucumber-js tests/features/register.feature",
+
+    "test:login": "cucumber-js tests/features/login.feature",
+
+    "test:accountOpen": "cucumber-js tests/features/accountOpen.feature",
+
+    "test:accountOverview": "cucumber-js tests/features/accountOverview.feature",
+
+    "test:transfer": "cucumber-js tests/features/fundTransfer.feature",
+
+    "test:billPay": "cucumber-js tests/features/billPay.feature",
+
+    "test:loan": "cucumber-js tests/features/requestLoan.feature",
+
+    "test:contactUs": "cucumber-js tests/features/contactUs.feature",
+
+    "test:e2e": "cucumber-js tests/features/e2e.feature",
+
+    "test:smoke": "cucumber-js --tags \"@smoke\"",
+
+    "test:banking": "cucumber-js --tags \"@banking\"",
+
+    "allure:generate": "allure generate tests/reports/allure-results --clean -o tests/reports/allure-report",
+
+    "allure:open": "allure open tests/reports/allure-report",
+
+    "report": "npm run allure:generate && npm run allure:open"
+  },
+
+  "keywords": [
+    "playwright",
+    "typescript",
+    "cucumber",
+    "bdd"
+  ],
+
+  "author": "",
+  "license": "ISC",
+
+  "type": "commonjs",
+
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
+    "allure-commandline": "^2.36.0",
+    "allure-cucumberjs": "^3.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  }
+}

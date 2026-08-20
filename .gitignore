@@ -1,0 +1,10 @@
+node_modules/
+.env
+
+playwright-report/
+test-results/
+
+tests/reports/allure-results/
+tests/reports/allure-report/
+tests/reports/*.html
+tests/reports/*.png

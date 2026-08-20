@@ -1,0 +1,47 @@
+{
+  "registration": {
+    "firstName": "Vivek",
+    "lastName": "Test",
+    "address": "Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "zipCode": "411001",
+    "phone": "9876543210",
+    "ssn": "123456789",
+    "usernamePrefix": "viv",
+    "password": "viv1",
+    "confirmPassword": "viv1"
+  },
+
+  "account": {
+    "accountType": "SAVINGS"
+  },
+
+  "transfer": {
+    "amount": "10"
+  },
+
+  "billPay": {
+    "payeeName": "Electricity Company",
+    "address": "Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "zipCode": "411001",
+    "phone": "9876543210",
+    "account": "12345",
+    "verifyAccount": "12345",
+    "amount": "10"
+  },
+
+  "loan": {
+    "amount": "1000",
+    "downPayment": "100"
+  },
+
+  "customerCare": {
+    "name": "Vivek",
+    "email": "vivek@test.com",
+    "phone": "9876543210",
+    "message": "Customer care test request"
+  }
+}
